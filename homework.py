@@ -32,9 +32,9 @@ def get_status(user_id):
 
 def send_sms(sms_text):
     message = client.messages.create(
-        to = NUMBER_TO,
-        from_= NUMBER_FROM,
-        body = sms_text
+        to=NUMBER_TO,
+        from_=NUMBER_FROM,
+        body=sms_text
     )
     return message.sid
 
