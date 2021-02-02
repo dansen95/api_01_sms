@@ -21,7 +21,7 @@ API_V = '5.92'
 
 def get_status(user_id):
     params = {
-        'user_id': user_id,
+        'user_ids': user_id,
         'v': API_V,
         'fields': 'online',
         'access_token': VK_TOKEN,
